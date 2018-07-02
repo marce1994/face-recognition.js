@@ -26,11 +26,12 @@ console.log(gotBigFaceRects)
 // scale detected rectangles back to original image size
 const gotFaceRects = gotBigFaceRects.map(rect => rescaleRect(rect, 0.5))
 
-const win2 = new fr.ImageWindow()
-win2.setImage(got)
-drawRects(win2, gotFaceRects)
+console.log(JSON.stringify(gotFaceRects));
+///const win2 = new fr.ImageWindow()
+//win2.setImage(got)
+//drawRects(win2, gotFaceRects)
 
-fr.hitEnterToContinue()
+//fr.hitEnterToContinue()
 
 
 
